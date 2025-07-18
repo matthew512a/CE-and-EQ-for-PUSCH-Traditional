@@ -30,14 +30,21 @@ The channel estimation problem involves estimating the channel matrix **H** base
 Mathematically, the received signal at the receiver can be expressed as:
 
 $$
-Y[n,m] = H[n,m] \cdot X[n,m] + Z[n,m}, \quad (n,m) \in T
+Y[n,m] = H[n,m] \cdot X[n,m] + Z[n,m], \quad (n,m) \in T
 $$
 
 Where:
-- \( Y[n,m] \): Received signal at subcarrier \( n \) and symbol \( m \).
-- \( X[n,m] \): Transmitted signal at subcarrier \( n \) and symbol \( m \).
-- \( H[n,m] \): Channel response at subcarrier \( n \) and symbol \( m \).
-- \( Z[n,m] \): Gaussian noise at subcarrier \( n \) and symbol \( m \).
+
+- **\( Y[n,m] \)**: Received signal at subcarrier \( n \) and symbol \( m \).
+- **\( X[n,m] \)**: Transmitted signal at subcarrier \( n \) and symbol \( m \).
+- **\( H[n,m] \)**: Channel response at subcarrier \( n \) and symbol \( m \).
+- **\( Z[n,m] \)**: Gaussian noise at subcarrier \( n \) and symbol \( m \).
+- **\( (n,m) \in T \)**: The indices \( (n,m) \) belong to the set \( T \), which represents a valid set of signal indices.
+
+## Objective
+
+The objective is to estimate the channel matrix \( H \) from the observed signal \( Y \) and the known pilot signal \( X \). This estimated channel matrix \( \hat{H} \) is then used for equalization to recover the transmitted signal.
+
 
 The objective is to estimate the channel matrix **H** from the observed signal **Y** and the known pilot signal **X**. This estimated channel matrix \( \hat{H} \) is then used for equalization to recover the transmitted signal.
 
