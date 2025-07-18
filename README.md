@@ -123,7 +123,7 @@ Simulation results show the effectiveness of channel estimation and equalization
 - **MSE (Mean Square Error)** reduction for the LS, ZF, and MMSE methods.
 - A comparison of different modulation schemes (QPSK, 16-QAM, 64-QAM) demonstrates that MMSE outperforms other methods in terms of both BER and MSE.
 
-![heapmap_PUSCH_Grid](Results/1. heapmap_PUSCH_Grid.png)
+![heapmap_PUSCH_Grid](Results/1.heapmap_PUSCH_Grid.png)
 
 Detailed charts and performance evaluations can be found in the project files.
 
