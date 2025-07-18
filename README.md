@@ -29,9 +29,9 @@ The channel estimation problem involves estimating the channel matrix **H** base
 
 Mathematically, the received signal at the receiver can be expressed as:
 
-\[
-Y[n,m] = H[n,m] \cdot X[n,m] + Z[n,m], \quad (n,m) \in T
-\]
+$$
+Y[n,m] = H[n,m] \cdot X[n,m] + Z[n,m}, \quad (n,m) \in T
+$$
 
 Where:
 - \( Y[n,m] \): Received signal at subcarrier \( n \) and symbol \( m \).
@@ -48,9 +48,9 @@ The **Least Square (LS)** estimation method directly minimizes the error between
 
 The LS estimator for the channel matrix is given by:
 
-\[
+$$
 \hat{H}_{LS}[n,m] = \frac{Y[n,m]}{X[n,m]}, \quad (n,m) \in P
-\]
+$$
 
 Where:
 - \( P \) is the set of pilot indices where \( X[n,m] \) is known.
@@ -61,15 +61,15 @@ The **MMSE** estimation method uses statistical information about the channel an
 
 The MMSE estimator is given by:
 
-\[
+$$
 \hat{H}_{MMSE} = \mathbb{E} \left[ H | Y[n,m], (n,m) \in P \right]
-\]
+$$
 
 Using the Gaussian assumption for both the channel and noise, the MMSE estimate can be expressed as:
 
-\[
+$$
 \hat{H}_{MMSE} = R_{H,Hp} \left( R_{Hp,Hp} + \sigma^2 I \right)^{-1} Y_p
-\]
+$$
 
 Where:
 - \( R_{H,Hp} \): Cross-covariance matrix between the full channel vector and the pilot vector.
@@ -84,9 +84,9 @@ The **Zero-Forcing (ZF)** equalization method is used to recover the transmitted
 
 The ZF equalizer is given by:
 
-\[
+$$
 \hat{X}_{ZF}[n,m] = \frac{Y[n,m]}{\hat{H}[n,m]}, \quad (n,m) \in D
-\]
+$$
 
 Where:
 - \( D \) is the set of data indices.
@@ -97,9 +97,9 @@ While ZF is simple to implement, it can amplify noise in low SNR conditions, lea
 #### 4. **MMSE Equalization**
 The **MMSE equalization** method improves upon ZF by considering both the channel and the noise to reduce the overall error. The MMSE equalizer for each subcarrier is given by:
 
-\[
+$$
 \hat{X}_{MMSE}[n,m] = \frac{\hat{H}^*[n,m]}{|\hat{H}[n,m]|^2 + \sigma^2} \cdot Y[n,m]
-\]
+$$
 
 Where:
 - \( \hat{H}^*[n,m] \): Complex conjugate of the estimated channel response.
