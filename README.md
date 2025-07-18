@@ -30,4 +30,4 @@ Detailed charts and performance evaluations can be found in the project files.
 To get started, clone this repository:
 ```bash
 git clone https://github.com/yourusername/Channel-Estimation-PUSCH.git
-cd Channel-Estimation-PUSCH
+cd code
