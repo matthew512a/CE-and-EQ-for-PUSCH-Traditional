@@ -11,7 +11,7 @@ The system model includes:
 - **Transmitter Model**: Converts binary data into modulated symbols and applies appropriate pilots for channel estimation.
 - **Channel Model**: A wireless channel modeled by a tapped-delay line (TDL) system, which includes multi-path fading and Doppler shifts.
 - **Receiver Model**: Receives the modulated signals, removes cyclic prefixes, performs FFT to convert time-domain signals to the frequency domain, estimates the channel, and equalizes the received signal.
-![System Model](figures/system_model.png)
+![System Model](figures/system_model.jpg)
 ## Channel Estimation and Equalization Algorithms
 The following algorithms are implemented to improve the performance of the PUSCH:
 - **Least Square (LS)**: Direct estimation minimizing the error between the received and transmitted signals.
