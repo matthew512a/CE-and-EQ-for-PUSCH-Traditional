@@ -122,36 +122,15 @@ Simulation results show the effectiveness of channel estimation and equalization
 - **BER (Bit Error Rate)** improvement as the SNR (Signal to Noise Ratio) increases.
 - **MSE (Mean Square Error)** reduction for the LS, ZF, and MMSE methods.
 - A comparison of different modulation schemes (QPSK, 16-QAM, 64-QAM) demonstrates that MMSE outperforms other methods in terms of both BER and MSE.
-<table>
-  <tr>
-    <td><img src="Results/heapmap_PUSCH_Grid.png" width="300"/></td>
-    <td><img src="Results/1.1.detail_heapmap.png" width="300"/></td>
-  </tr>
-  <tr>
-    <td><img src="Results/2.16_QAM_Giandochomsao.png" width="300"/></td>
-    <td><img src="Results/3.BER_noeq_and_LS_ZF.png" width="300"/></td>
-  </tr>
-  <tr>
-    <td><img src="Results/4.MSE_noeq_and_LS_ZF.png" width="300"/></td>
-    <td><img src="Results/5.BER_16_QAM_3TH.png" width="300"/></td>
-  </tr>
-  <tr>
-    <td><img src="Results/6.MSE_16_QAM_3TH.png" width="300"/></td>
-    <td><img src="Results/7.BER_QPSK-16QAM-64QAM.png" width="300"/></td>
-  </tr>
-  <tr>
-    <td><img src="Results/7.1.BER_QPSK-16QAM-64QAM_10mau.png" width="300"/></td>
-    <td><img src="Results/7.2.BER_QPSK-16QAM-64QAM_1000mau.png" width="300"/></td>
-  </tr>
-  <tr>
-    <td><img src="Results/8.MSE_QPSK-16QAM-64QAM.png" width="300"/></td>
-    <td><img src="Results/8.1.MSE_QPSK-16QAM-64QAM_10mau.png" width="300"/></td>
-  </tr>
-  <tr>
-    <td><img src="Results/8.1.MSE_QPSK-16QAM-64QAM_1000mau.png" width="300"/></td>
-    <td></td>
-  </tr>
-</table>
+| ![heapmap_PUSCH_Grid](Results/heapmap_PUSCH_Grid.png) | ![detail_heapmap](Results/1.1.detail_heapmap.png) |
+| ----------------------------------------------------- | -------------------------------------------------- |
+| ![16_QAM_Giandochomsao](Results/2.16_QAM_Giandochomsao.png) | ![BER_noeq_and_LS_ZF](Results/3.BER_noeq_and_LS_ZF.png) |
+| ![MSE_noeq_and_LS_ZF](Results/4.MSE_noeq_and_LS_ZF.png) | ![BER_16_QAM_3TH](Results/5.BER_16_QAM_3TH.png) |
+| ![MSE_16_QAM_3TH](Results/6.MSE_16_QAM_3TH.png) | ![BER_QPSK-16QAM-64QAM](Results/7.BER_QPSK-16QAM-64QAM.png) |
+| ![BER_QPSK-16QAM-64QAM_10mau](Results/7.1.BER_QPSK-16QAM-64QAM_10mau.png) | ![BER_QPSK-16QAM-64QAM_1000mau](Results/7.2.BER_QPSK-16QAM-64QAM_1000mau.png) |
+| ![MSE_QPSK-16QAM-64QAM](Results/8.MSE_QPSK-16QAM-64QAM.png) | ![MSE_QPSK-16QAM-64QAM_10mau](Results/8.1.MSE_QPSK-16QAM-64QAM_10mau.png) |
+| ![MSE_QPSK-16QAM-64QAM_1000mau](Results/8.1.MSE_QPSK-16QAM-64QAM_1000mau.png) |  |
+
 
 Detailed charts and performance evaluations can be found in the project files.
 
