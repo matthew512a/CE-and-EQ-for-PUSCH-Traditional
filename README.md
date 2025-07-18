@@ -5,9 +5,9 @@ This project focuses on the channel estimation and equalization for the Physical
 
 ## PUSCH Grid Use Case
 The PUSCH is crucial for transmitting user data in 5G networks, particularly in the uplink direction. The grid of PUSCH resource elements is designed to allocate frequency and time resources dynamically based on traffic demands. This use case simulates the allocation and estimation of channels in this uplink shared resource.
-![PUSCH Grid Use Case](figures/pusch_grid.jpg)
+![PUSCH Grid Use Case](figures/pusch_grid.png)
 ## System Model
-![System Model](figures/system_model.png)
+![System Model](figures/system_model.jpg)
 
 The system model includes:
 - **Transmitter Model**: Converts binary data into modulated symbols and applies appropriate pilots for channel estimation.
