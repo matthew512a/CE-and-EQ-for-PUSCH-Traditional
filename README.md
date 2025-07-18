@@ -1,84 +1,33 @@
-# 📡 Mini Project Report: Channel Estimation and Equalization for PUSCH in 5G NR
+# Channel Estimation and Equalization for PUSCH
 
-This repository contains the mini project report titled:
+## Overview
+This project focuses on the channel estimation and equalization for the Physical Uplink Shared Channel (PUSCH) in 5G NR systems. The main goal is to improve the reliability of the communication by applying algorithms like Least Square (LS), Zero Force (ZF), and Minimum Mean Square Error (MMSE). These algorithms help in estimating the channel and performing equalization to combat channel impairments such as fading and interference.
 
-> **"Designing Channel Estimation and Equalization Schemes for PUSCH using LS/ZF and MMSE Algorithms"**
+## PUSCH Grid Use Case
+The PUSCH is crucial for transmitting user data in 5G networks, particularly in the uplink direction. The grid of PUSCH resource elements is designed to allocate frequency and time resources dynamically based on traffic demands. This use case simulates the allocation and estimation of channels in this uplink shared resource.
 
----
+## System Model
+The system model includes:
+- **Transmitter Model**: Converts binary data into modulated symbols and applies appropriate pilots for channel estimation.
+- **Channel Model**: A wireless channel modeled by a tapped-delay line (TDL) system, which includes multi-path fading and Doppler shifts.
+- **Receiver Model**: Receives the modulated signals, removes cyclic prefixes, performs FFT to convert time-domain signals to the frequency domain, estimates the channel, and equalizes the received signal.
 
-## 📌 Project Overview
+## Channel Estimation and Equalization Algorithms
+The following algorithms are implemented to improve the performance of the PUSCH:
+- **Least Square (LS)**: Direct estimation minimizing the error between the received and transmitted signals.
+- **MMSE (Minimum Mean Square Error)**: A more sophisticated method that uses statistical information to reduce error in the estimation.
+- **ZF (Zero Forcing)**: A simple equalization algorithm that inverts the estimated channel to recover the transmitted symbols, though it may amplify noise in low SNR conditions.
 
-- **Program**: Viettel Digital Talent 2025 – Phase 1  
-- **Student**: Nguyễn Khắc Kiên  
-- **Supervisor**: Mr. Lương Xuân Hào  
-- **Affiliation**: Faculty of Electronics and Telecommunications, University of Engineering and Technology, VNU
+## Results
+Simulation results show the effectiveness of channel estimation and equalization techniques in improving system performance. Key results include:
+- **BER (Bit Error Rate)** improvement as the SNR (Signal to Noise Ratio) increases.
+- **MSE (Mean Square Error)** reduction for the LS, ZF, and MMSE methods.
+- A comparison of different modulation schemes (QPSK, 16-QAM, 64-QAM) demonstrates that MMSE outperforms other methods in terms of both BER and MSE.
 
----
+Detailed charts and performance evaluations can be found in the project files.
 
-## 📖 Abstract
-
-This project presents the design, simulation, and performance evaluation of channel estimation and equalization techniques for the Physical Uplink Shared Channel (PUSCH) in 5G New Radio (NR) systems. The focus is placed on implementing and comparing the effectiveness of LS (Least Squares), ZF (Zero Forcing), and MMSE (Minimum Mean Square Error) methods within a 5G uplink simulation framework.
-
----
-
-## 📚 Key Contents
-
-### 1. **Overview of 5G NR Architecture**
-- 5G network components: gNB, CU/DU split, 5GC core
-- RAN protocol stacks and transmission channel classification
-
-### 2. **PUSCH Physical Layer Processing**
-- Uplink signal chain: modulation, pilot insertion, IFFT, cyclic prefix
-- Types of PUSCH resource allocation: dynamic vs configured grants
-
-### 3. **System Model**
-- Transmitter, TDL channel model, and receiver chain
-- Resource grid modeling (OFDM slots, subcarriers)
-
-### 4. **Channel Estimation Algorithms**
-- **LS Estimator**: Simple and low-complexity; suffers under low SNR
-- **MMSE Estimator**: Statistically optimal; higher accuracy, higher complexity
-
-### 5. **Equalization Techniques**
-- **Zero Forcing (ZF)**: Inverts channel response; amplifies noise
-- **MMSE Equalizer**: Balances between noise suppression and inversion
-
----
-
-## 📊 Simulation & Results
-
-- **Metrics Evaluated**:
-  - **BER** (Bit Error Rate)
-  - **MSE** (Mean Square Error)
-- **Scenarios Tested**:
-  - Varying SNRs from 0 dB to 30 dB
-  - Three modulation schemes: QPSK, 16-QAM, 64-QAM
-- **Findings**:
-  - MMSE consistently outperforms LS + ZF in both BER and MSE
-  - Higher modulation schemes require more accurate estimation
-
----
-
-## 📂 Files Included
-
-- [`VDT_5G_Channel_Estimation.pdf`](./VDT_5G_Channel_Estimation.pdf) — Full report with figures, formulas, and data tables
-- [`code/`](../code/) (optional) — Folder for MATLAB or Python simulation scripts (to be added)
-
----
-
-## 🔍 Future Work
-
-- Explore machine learning-based estimators for non-linear and time-varying 5G channels
-- Implement real-time FPGA-based testing using SDR platforms
-- Integrate SRS and advanced pilot design for enhanced estimation under mobility
-
----
-
-## 📑 References
-
-Key research and IEEE papers cited in the report, including recent works on deep learning channel estimation in OFDM systems. Full citation list in the PDF.
-
----
-
-Thank you for reading!  
-If you find this project useful, feel free to ⭐️ the repository or fork for your own research.
+## Installation
+To get started, clone this repository:
+```bash
+git clone https://github.com/yourusername/Channel-Estimation-PUSCH.git
+cd Channel-Estimation-PUSCH
