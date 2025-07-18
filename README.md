@@ -79,6 +79,18 @@ Where:
 
 The MMSE method provides more accurate channel estimates compared to LS, particularly in noisy environments, but comes with higher computational complexity.
 
+Using the Gaussian assumption for both the channel and noise, the MMSE estimate can be expressed as:
+
+$ \hat{H}_{MMSE} = R_{H,Hp} \left( R_{Hp,Hp} + \sigma^2 I \right)^{-1} Y_p $
+
+Where:
+- $ R_{H,Hp} $: Cross-covariance matrix between the full channel vector and the pilot vector.
+- $ R_{Hp,Hp} $: Autocovariance matrix of the pilot vector.
+- $ \sigma^2 $: Noise variance.
+- $ Y_p $: Pilot signal vector.
+
+The MMSE method provides more accurate channel estimates compared to LS, particularly in noisy environments, but comes with higher computational complexity.
+
 #### 3. **Zero-Forcing (ZF) Equalization**
 The **Zero-Forcing (ZF)** equalization method is used to recover the transmitted signal by inverting the estimated channel matrix. This method assumes that the channel has been accurately estimated and aims to cancel out the interference caused by the channel.
 
