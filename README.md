@@ -69,13 +69,13 @@ $$
 
 Using the Gaussian assumption for both the channel and noise, the MMSE estimate can be expressed as:
 
-$ \hat{H}_{MMSE} = R_{H,Hp} \left( R_{Hp,Hp} + \sigma^2 I \right)^{-1} Y_p $
+$$ \hat{H}_{MMSE} = R_{H,Hp} \left( R_{Hp,Hp} + \sigma^2 I \right)^{-1} Y_p $$
 
 Where:
-- \( R_{H,Hp} \): Cross-covariance matrix between the full channel vector and the pilot vector.
-- \( R_{Hp,Hp} \): Autocovariance matrix of the pilot vector.
-- \( \sigma^2 \): Noise variance.
-- \( Y_p \): Pilot signal vector.
+- **\( R_{H,Hp} \)**: Cross-covariance matrix between the full channel vector and the pilot vector.
+- **\( R_{Hp,Hp} \)**: Autocovariance matrix of the pilot vector.
+- **\( \sigma^2 \)**: Noise variance.
+- **\( Y_p \)**: Pilot signal vector.
 
 The MMSE method provides more accurate channel estimates compared to LS, particularly in noisy environments, but comes with higher computational complexity.
 
