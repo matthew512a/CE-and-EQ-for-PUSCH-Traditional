@@ -41,11 +41,6 @@ Where:
 - **\( Z[n,m] \)**: Gaussian noise at subcarrier \( n \) and symbol \( m \).
 - **\( (n,m) \in T \)**: The indices \( (n,m) \) belong to the set \( T \), which represents a valid set of signal indices.
 
-## Objective
-
-The objective is to estimate the channel matrix \( H \) from the observed signal \( Y \) and the known pilot signal \( X \). This estimated channel matrix \( \hat{H} \) is then used for equalization to recover the transmitted signal.
-
-
 The objective is to estimate the channel matrix **H** from the observed signal **Y** and the known pilot signal **X**. This estimated channel matrix \( \hat{H} \) is then used for equalization to recover the transmitted signal.
 
 ### Channel Estimation Algorithms
